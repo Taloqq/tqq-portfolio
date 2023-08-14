@@ -9,15 +9,37 @@
   align-items: center;
 }
 
-.header {
-  padding: 50px 2rem 150px;
-  color: black;
-  text-align: center;
-}
 .name {
-  letter-spacing: 1px;
+  color: #2867b1;
+  background-color: white;
+  margin-top: 50px;
+  padding: 10px 20px;
+  letter-spacing: .8px;
+  border-bottom: 1px solid rgb(248, 248, 248);
+  border-top: 1px solid rgb(248, 248, 248);
 }
+.contact {
+  padding: 50px;
+}
+.email {
+  color: black;
+  font-weight: 500;
+  padding-top: 10px;
+  
+}
+.linkedin {
+  width: 120px;
+  height: 100%;
+  margin-right: 13px;
 
+  cursor: pointer;
+}
+.github {
+  width: 95px;
+  height: 100%;
+  cursor: pointer;
+  margin-bottom: -5px;
+}
 .black_overlay {
   position: absolute;
   top: 0;
@@ -34,7 +56,7 @@
   background-color: rgb(26, 26, 26);
   padding: 10px 100px;
   letter-spacing: 1px;
-
+  margin-top: 150px;
 }
 .duty {
   width: 100%;
@@ -116,12 +138,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: 1px solid rgb(233, 233, 233);
 }
 .app_links {
   display: flex;
   align-items: center;
   margin-top: 40px;
-  margin-left: -5px;
+  margin-left: -5px; 
 }
 .app_store_badge {
   width: 155px;

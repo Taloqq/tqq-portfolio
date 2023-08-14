@@ -9,17 +9,24 @@ import { inter, robotoCursive } from './fonts'
 import google_play_badge from '../images/google-play-badge.png'
 import app_store_badge from '../images/apple-badge.svg'
 import ykioski_logo from '../images/ymparisto-kioski.svg'
+import linkedin from '../images/LI-Logo.png';
+import github from '../images/GitHub_Logo.png';
 
 export default function Home() {
 
   return (
     <main className={styles.container}>
 
-        <header className={styles.header}>
-          <h1 className={styles.name}>Antte Alatalo</h1>
-          <h3 style={{'color': 'gray'}}>Fullstack developer</h3>
-        </header>
-        <h2 className={styles.title}>Projects</h2>
+        <div className={styles.contact}>
+          <Image src={linkedin} alt='Linkedin' className={styles.linkedin} />
+          <Image src={github} alt='Github' className={styles.github} />
+          <h3 className={styles.email}>antte.alatalo@hotmail.com</h3>
+        </div>
+        <h2 className={styles.name}>Antte Alatalo - Fullstack/Frontend developer</h2>
+
+        <h3 style={{'color': 'black'}}></h3>
+
+        <h1 className={styles.title}>Projects</h1>
         <div className={styles.duty}>
           <div className={styles.black_overlay} />
           <section className={styles.project_container}>
