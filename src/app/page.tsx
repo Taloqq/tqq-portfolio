@@ -5,12 +5,13 @@ import duty_screenshot from '../images/duty_screenshot.jpg'
 import duty_bg from '../images/duty_bg.jpg'
 import Navbar from '@/components/Navbar/Navbar'
 import { Chakra_Petch, Inter } from 'next/font/google';
-import { inter, robotoCursive } from './fonts'
+import { inter, quicksand, robotoCursive, ysabeau } from './fonts'
 import google_play_badge from '../images/google-play-badge.png'
 import app_store_badge from '../images/apple-badge.svg'
 import ykioski_logo from '../images/ymparisto-kioski.svg'
 import linkedin from '../images/LI-Logo.png';
 import github from '../images/GitHub_Logo.png';
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -18,20 +19,29 @@ export default function Home() {
     <main className={styles.container}>
 
         <div className={styles.contact}>
-          <Image src={linkedin} alt='Linkedin' className={styles.linkedin} />
-          <Image src={github} alt='Github' className={styles.github} />
-          <h3 className={styles.email}>antte.alatalo@hotmail.com</h3>
+          <Link href='https://www.linkedin.com/in/antte-alatalo/' target='_blank'>
+            <Image src={linkedin} alt='Linkedin' className={styles.linkedin} />
+          </Link>
+          <Link href='https://github.com/Taloqq' target='_blank'>
+            <Image src={github} alt='Github' className={styles.github} />
+          </Link>
+          <h3 className={ysabeau.className} style={{color: 'black', paddingLeft: 5}}>antte.alatalo@hotmail.com</h3>
         </div>
-        <h2 className={styles.name}>Antte Alatalo - Fullstack/Frontend developer</h2>
+        <div className={ysabeau.className}>
+          <h2 className={styles.name}>Antte Alatalo - Fullstack/Frontend developer</h2>
 
-        <h3 style={{'color': 'black'}}></h3>
-
-        <h1 className={styles.title}>Projects</h1>
+        </div>
+        <div className={styles.titleContainer}>
+          <h1 className={styles.title}>Projects</h1>
+          <div className={styles.line} />
+        </div>
         <div className={styles.duty}>
           <div className={styles.black_overlay} />
           <section className={styles.project_container}>
             {/* <Image src={duty_screenshot} alt='Duty' className={styles.duty_screenshot} /> */}
-            <Image src={duty_logo} alt='Duty' className={styles.duty_logo} />
+            <Link href='https://dutyapp.fi/' target='_blank'>
+              <Image src={duty_logo} alt='Duty' className={styles.duty_logo} />
+            </Link>
             <div className={styles.desc}>
               <h3 className={inter.className} style={{color: '#ffee0c', paddingBottom: 5}}>Get ready to work</h3>
               <h4 className={inter.className} style={{color: '#5c5c5c', paddingBottom: 4}}>or</h4>
@@ -39,12 +49,12 @@ export default function Home() {
               <div style={{paddingTop: 50}}>Duty is an application that lets you find and hire people to do small work for you - or find work for yourself</div>
               <div style={{color: '#ffee0c'}}>to earn money.</div>
               <div className={styles.app_links}>
-                <a target='_blank' href='https://play.google.com/store/apps/details?id=com.devolution.duty'>
+                <Link target='_blank' href='https://play.google.com/store/apps/details?id=com.devolution.duty'>
                   <Image className={styles.google_play_badge} alt='Get it on Google Play' src={google_play_badge}/>
-                </a>
-                <a target='_blank' href='https://apps.apple.com/fi/app/duty/id6444645784'>
+                </Link>
+                <Link target='_blank' href='https://apps.apple.com/fi/app/duty/id6444645784'>
                   <Image className={styles.app_store_badge} alt='Download on App store' src={app_store_badge}/>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
@@ -61,9 +71,14 @@ export default function Home() {
               and increased collaboration between farms. Ympäristökioski suggests environmentally friendly farming solutions for farmers,
               based their farms&apos; properties.
             </div>
-            <a target='_blank' href='https://app.ymparistokioski.fi/login' className={styles.ykioski_link}>
-              Website  &#8250;
-            </a>
+            <div style={{display: 'flex'}}>
+              <Link target='_blank' href='https://www.ymparistokioski.fi/' className={styles.ykioski_link}>
+                Website  &#8250;
+              </Link>
+              <Link target='_blank' href='https://app.ymparistokioski.fi/login' className={styles.ykioski_app_link}>
+                Application  &#8250;
+              </Link>
+            </div>
             </div>
  
           </section>

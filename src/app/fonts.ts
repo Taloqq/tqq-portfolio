@@ -1,4 +1,4 @@
-import { Chakra_Petch, Inter, Roboto } from 'next/font/google';
+import { Chakra_Petch, Inter, Quicksand, Roboto, Ysabeau } from 'next/font/google';
 
 export const chakra_petch = Chakra_Petch({
   subsets: ['latin'],
@@ -18,4 +18,15 @@ export const robotoCursive = Roboto({
   display: 'swap',
   weight: '400',
   variable: '--font-cursive'
+})
+
+export const quicksand = Quicksand({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+})
+export const ysabeau = Ysabeau({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
 })
