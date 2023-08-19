@@ -1,11 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
 import duty_logo from '../images/duty_logo.png'
-import duty_screenshot from '../images/duty_screenshot.jpg'
-import duty_bg from '../images/duty_bg.jpg'
-import Navbar from '@/components/Navbar/Navbar'
-import { Chakra_Petch, Inter } from 'next/font/google';
-import { inter, quicksand, robotoCursive, ysabeau } from './fonts'
+
+import { inter, ysabeau } from './fonts'
 import google_play_badge from '../images/google-play-badge.png'
 import app_store_badge from '../images/apple-badge.svg'
 import ykioski_logo from '../images/ymparisto-kioski.svg'
@@ -25,12 +22,11 @@ export default function Home() {
           <Link href='https://github.com/Taloqq' target='_blank'>
             <Image src={github} alt='Github' className={styles.github} />
           </Link>
-          <h3 className={ysabeau.className} style={{color: 'black', paddingLeft: 5}}>antte.alatalo@hotmail.com</h3>
+          <h3 className={ysabeau.className} style={{color: 'black', paddingLeft: 6}}>antte.alatalo@hotmail.com</h3>
         </div>
-        <div className={ysabeau.className}>
-          <h2 className={styles.name}>Antte Alatalo - Fullstack/Frontend developer</h2>
-
-        </div>
+        <header className={ysabeau.className}>
+          <h2 className={styles.header}>Antte Alatalo - Fullstack/Frontend developer</h2>
+        </header>
         <div className={styles.titleContainer}>
           <h1 className={styles.title}>Projects</h1>
           <div className={styles.line} />
@@ -38,16 +34,16 @@ export default function Home() {
         <div className={styles.duty}>
           <div className={styles.black_overlay} />
           <section className={styles.project_container}>
-            {/* <Image src={duty_screenshot} alt='Duty' className={styles.duty_screenshot} /> */}
             <Link href='https://dutyapp.fi/' target='_blank'>
               <Image src={duty_logo} alt='Duty' className={styles.duty_logo} />
             </Link>
-            <div className={styles.desc}>
+            <div className={styles.project_info}>
               <h3 className={inter.className} style={{color: '#ffee0c', paddingBottom: 5}}>Get ready to work</h3>
               <h4 className={inter.className} style={{color: '#5c5c5c', paddingBottom: 4}}>or</h4>
-              <h3 className={robotoCursive.className} style={{color: '#e34fa3'}}>take it easy</h3>
-              <div style={{paddingTop: 50}}>Duty is an application that lets you find and hire people to do small work for you - or find work for yourself</div>
-              <div style={{color: '#ffee0c'}}>to earn money.</div>
+              <h3 className={inter.className} style={{color: '#e34fa3'}}>take it easy</h3>
+              <div className={styles.desc_black}>Duty is an application that lets you find and hire people to do small work for you - or find work for yourself
+                <div style={{color: '#ffee0c'}}>to earn money.</div>
+              </div>
               <div className={styles.app_links}>
                 <Link target='_blank' href='https://play.google.com/store/apps/details?id=com.devolution.duty'>
                   <Image className={styles.google_play_badge} alt='Get it on Google Play' src={google_play_badge}/>
@@ -64,18 +60,18 @@ export default function Home() {
           <div className={styles.white_overlay} />
           <section className={styles.project_container}>
             <Image src={ykioski_logo} alt='Ymparistö kioski' className={styles.ykioski_logo} />
-            <div className={styles.desc_white}>
+            <div className={styles.project_info_white}>
             <h3 className={inter.className} style={{color: '#73ab5c', paddingBottom: 5}}>Environmentally friendly farming</h3>
-            <div style={{paddingTop: 50, color: 'black', fontSize: 22}}>
+            <div className={styles.desc_white}>
               Ympäristökioski is an application - that is part of a bigger project, aiming for sustainable farming practices
               and increased collaboration between farms. Ympäristökioski suggests environmentally friendly farming solutions for farmers,
               based their farms&apos; properties.
             </div>
-            <div style={{display: 'flex'}}>
+            <div className={inter.className} style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', paddingTop: 50, gap: 50}}>
               <Link target='_blank' href='https://www.ymparistokioski.fi/' className={styles.ykioski_link}>
                 Website  &#8250;
               </Link>
-              <Link target='_blank' href='https://app.ymparistokioski.fi/login' className={styles.ykioski_app_link}>
+              <Link target='_blank' href='https://app.ymparistokioski.fi/login' className={styles.ykioski_link}>
                 Application  &#8250;
               </Link>
             </div>
