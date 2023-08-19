@@ -1,1 +1,1 @@
-Taloqq portfolio
+tqq-portfolio.vercel.app
