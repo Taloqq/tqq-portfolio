@@ -99,9 +99,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-/* Example of how to style the cursive Inter font */
-.--font-cursive {
-  font-family: 'Inter Cursive', sans-serif; /* Use the correct font-family name for the cursive variant */
-  /* Add any additional styling you want for the cursive text */
-}

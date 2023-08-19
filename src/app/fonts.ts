@@ -1,4 +1,4 @@
-import { Chakra_Petch, Inter, Ysabeau } from 'next/font/google';
+import { Inter, Ysabeau } from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['latin'],
