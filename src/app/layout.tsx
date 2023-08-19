@@ -2,12 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Chakra_Petch } from 'next/font/google'
 import Head from 'next/head'
-import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/react';
 
 const chakra_petch = Chakra_Petch({ subsets: ['latin'], weight: '300' })
-
-
-let title = 'ads';
 
 export const metadata: Metadata = {
   title: '(1) Uusi kehittäjä lähelläsi!',
@@ -24,7 +21,10 @@ export default function RootLayout({
       <Head>
         <title>title</title>
       </Head>
-      <body className={chakra_petch.className}>{children}</body>
+      <body className={chakra_petch.className}>
+        {children}
+        <Analytics />  
+      </body>
     </html>
   )
 }
