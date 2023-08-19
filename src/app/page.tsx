@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
 import duty_logo from '../images/duty_logo.png'
-
 import { inter, ysabeau } from './fonts'
 import google_play_badge from '../images/google-play-badge.png'
 import app_store_badge from '../images/apple-badge.svg'
@@ -27,7 +26,7 @@ export default function Home() {
         <header className={ysabeau.className}>
           <h2 className={styles.header}>Antte Alatalo - Fullstack/Frontend developer</h2>
         </header>
-        <div className={styles.titleContainer}>
+        <div className={styles.title_container}>
           <h1 className={styles.title}>Projects</h1>
           <div className={styles.line} />
         </div>
