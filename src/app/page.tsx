@@ -64,7 +64,7 @@ export default function Home() {
             <div className={styles.desc_white}>
               Ympäristökioski is an application - that is part of a bigger project, aiming for sustainable farming practices
               and increased collaboration between farms. Ympäristökioski suggests environmentally friendly farming solutions for farmers,
-              based their farms&apos; properties.
+              based on their farms&apos; properties.
             </div>
             <div className={inter.className} style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', paddingTop: 50, gap: 50}}>
               <Link target='_blank' href='https://www.ymparistokioski.fi/' className={styles.ykioski_link}>
