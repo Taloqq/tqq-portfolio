@@ -22,7 +22,7 @@ export default function Home() {
           <Link href='https://github.com/Taloqq' target='_blank'>
             <Image src={github} alt='Github' className={styles.github} />
           </Link>
-          <h3 className={ysabeau.className} style={{color: 'black', paddingLeft: 6}}>antte.alatalo@hotmail.com</h3>
+          <h3 className={ysabeau.className} style={{color: 'black', paddingRight: 5}}>antte.alatalo@hotmail.com</h3>
         </div>
         <header className={ysabeau.className}>
           <h2 className={styles.header}>Antte Alatalo - Fullstack/Frontend developer</h2>
