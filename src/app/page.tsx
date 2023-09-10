@@ -40,7 +40,7 @@ export default function Home() {
               <h3 className={inter.className} style={{color: '#ffee0c', paddingBottom: 5}}>Get ready to work</h3>
               <h4 className={inter.className} style={{color: '#5c5c5c', paddingBottom: 4}}>or</h4>
               <h3 className={inter.className} style={{color: '#e34fa3'}}>take it easy</h3>
-              <div className={styles.desc_black}>Duty is an application that lets you find and hire people to do small work for you - or find work for yourself
+              <div className={styles.desc_duty}>Duty is an application that lets you find and hire people to do small work for you - or find work for yourself
                 <div style={{color: '#ffee0c'}}>to earn money.</div>
               </div>
               <div className={styles.app_links}>
@@ -61,7 +61,7 @@ export default function Home() {
             <Image src={ykioski_logo} alt='Ymparistö kioski' className={styles.ykioski_logo} />
             <div className={styles.project_info_white}>
             <h3 className={inter.className} style={{color: '#73ab5c', paddingBottom: 5}}>Environmentally friendly farming</h3>
-            <div className={styles.desc_white}>
+            <div className={styles.desc_ykioski}>
               Ympäristökioski is an application - that is part of a bigger project, aiming for sustainable farming practices
               and increased collaboration between farms. Ympäristökioski suggests environmentally friendly farming solutions for farmers,
               based on their farms&apos; properties.
